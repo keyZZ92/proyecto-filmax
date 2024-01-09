@@ -1,250 +1,329 @@
-:root{
-    --font-text:'Roboto', sans-serif;
+:root {
+    --font-text: 'Roboto', sans-serif;
     --font-title: 'Roboto Condensed', sans-serif;
-    --background-color:#1a1d24;
-    --background-color2:#e0011a ;
-    
+    --background-color: #1a1d24;
+    --background-color2: #e0011a;
 }
-:where(:not(html, iframe, canvas, img, svg, video, audio) :not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video, audio) :not(svg *, symbol *)) {
     all: unset;
     display: revert;
-} /*OJO no entiendo para que sirve esto y por que dejo de funcionar, lo copie tal cual?*/
+}
+body {
+    margin: 0;
+}
 
-html /*fuente*/ {
+/*OJO no entiendo para que sirve esto y por que dejo de funcionar, lo copie tal cual?*/
+
+html
+
+/*fuente*/
+    {
     font-family: var(--font-text);
-}/*al cargar las fuentes en html debo cerrar / el link*/
+}
 
-li /* sirve para quitar puntos a las listas*/ {
+/*al cargar las fuentes en html debo cerrar / el link*/
+
+li
+
+/* sirve para quitar puntos a las listas*/
+    {
     list-style: none;
 }
+
 img {
     max-width: 100%;
     height: auto;
-}/*con esto hago que todas las imagenes se adapten al tamaño de su padre*/
-.bg-main /*div y clase creado para hacer una capa de fondo del header y sea del mismo*/ {   
+}
+
+/*con esto hago que todas las imagenes se adapten al tamaño de su padre*/
+.bg-main
+
+/*div y clase creado para hacer una capa de fondo del header y sea del mismo*/
+    {
     background-color: #1a1d24
 }
+
 .header {
-    display: flex; /*flex header*/
+    display: flex;
+    /*flex header*/
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-color);
     height: 80px;
-    margin-inline: auto; /*centrar con margenes para que se reparta todo parejo*/
-    max-width: 1200px; /*ancho max que el lememento puede tener, puso pequeña la barra del header */
+    margin-inline: auto;
+    /*centrar con margenes para que se reparta todo parejo*/
+    max-width: 1200px;
+    /*ancho max que el lememento puede tener, puso pequeña la barra del header */
     color: white;
-    text-transform: uppercase;/*poner mayuscula*/
-    fill: white ;
+    text-transform: uppercase;
+    /*poner mayuscula*/
+    fill: white;
     font-family: var(--font-title);
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0,08px;/*ojo repasar lo de las fuentes relativas la multiplicacion*/
-}
-.header svg /*ajuste de svg redes sociales*/ {
-width: 20px;
-height: 20px;
-}
-.header .main-menu ul /*flex menu pricipal*/ {
-    display: flex;
-    gap:40px /*¿Por qué el gap no me funciona en el .heard pricipal y debo agregarlo a cada clase?*/
+    letter-spacing: 0, 08px;
+    /*ojo repasar lo de las fuentes relativas la multiplicacion*/
 
 }
-.header .tools-menu /*flex menu herramientas pricipal*/ {
+
+.header svg
+
+/*ajuste de svg redes sociales*/
+    {
+    width: 20px;
+    height: 20px;
+}
+
+.header .main-menu ul
+
+/*flex menu pricipal*/
+    {
+    display: flex;
+    gap: 40px
+        /*¿Por qué el gap no me funciona en el .heard pricipal y debo agregarlo a cada clase?*/
+
+}
+
+.header .tools-menu
+
+/*flex menu herramientas pricipal*/
+    {
     display: flex;
     gap: 40px;
 }
-.header .tools-menu ul/*flex menu redes*/ {
+
+.header .tools-menu ul
+
+/*flex menu redes*/
+    {
     display: flex;
     gap: 40px;
 }
+
 .news {
-    position: relative;/*usado para posicionar la news data en realcion a su abuelo no al padre */
+    position: relative;
+    /*usado para posicionar la news data en realcion a su abuelo no al padre */
     margin-inline: auto;
     max-width: 1200px;
-    display: flex;/*tengo 2 hijos  en .news, al poner flex pone uno al lado del otro*/
+    display: flex;
+    /*tengo 2 hijos  en .news, al poner flex pone uno al lado del otro*/
     gap: 30px;
     color: white;
     padding-bottom: 200px;
 }
-.news > article {
+
+.news>article {
     max-width: 75%;
-} /*me ayuda a distribuir mediate % las dos cuadriculas de la pag */
+}
+
+/*me ayuda a distribuir mediate % las dos cuadriculas de la pag */
 .news aside article {
     display: flex;
-    gap: 25px;px;
+    gap: 25px;
     margin-bottom: 25px;
 }
+
 .news aside article:last-child {
     margin-bottom: 0;
 }
+
 .news .recent-news {
     margin-bottom: 30px;
     font-family: var(--font-title);
     font-size: 17px;
     font-weight: 700;
 }
+
 .news aside h3 {
-    font-family:  var(--font-title);
+    font-family: var(--font-title);
     font-size: 16px;
     font-weight: 700;
-    
+
 }
+
 .news aside time {
     font-family: var(--font-title);
     font-size: 11px;
     font-weight: lighter;
     color: #a8a8a8;
-    
+
 }
-.news > article {
+
+.news>article {
     height: 600px;
     width: 100%;
     background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-} /* > sig hijo directo , primera imagen*/
+}
+
+/* > sig hijo directo , primera imagen*/
 .news .news-data {
-position: absolute;/**posicionar respecto al 1 relative que encuentro, porque instintivamente se alinearia on el padre, al ser el padre de eso un articulo con imangen no me sirve por eso coloco el relative enn .news*/
-bottom: 200px; 
-right: 110px;
-max-width: 400px;
-padding: 40px 0 0 40px;
-background-color:var(--background-color);
-top: 350px;
-width: 100%;
+    position: absolute;
+    /**posicionar respecto al 1 relative que encuentro, porque instintivamente se alinearia on el padre, al ser el padre de eso un articulo con imangen no me sirve por eso coloco el relative enn .news*/
+    bottom: 200px;
+    right: 110px;
+    max-width: 400px;
+    padding: 40px 0 0 40px;
+    background-color: var(--background-color);
+    top: 350px;
+    width: 100%;
 
 }
+
 .news .news-data h2 {
-font-family: var(--font-title);
-text-transform: uppercase; /*¿Por qué no funciona?*/
-font-size: 37px;
-font-weight: 700;
-color: white;
-}
-.news .news-data > p {
-font-family: var(--font-text);
-font-size: 14px;
-font-weight:300;
-color:#a8a8a8;
-margin-top:  20px; 
-margin-bottom: 20px;
-}
-.news .news-data >a {
     font-family: var(--font-title);
-font-size: 13px;
-font-weight:700;
-color:white;
+    text-transform: uppercase;
+    /*¿Por qué no funciona?*/
+    font-size: 37px;
+    font-weight: 700;
+    color: white;
 }
+
+.news .news-data>p {
+    font-family: var(--font-text);
+    font-size: 14px;
+    font-weight: 300;
+    color: #a8a8a8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.news .news-data>a {
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+
 .catalogo ul {
-display: flex;
-font-family: var(--font-title);
-font-size: 13px;
-font-weight: 700;
-color: white;  
-margin-top: -150px; /*uso esto y no se ve igual*/
-max-width: 1200px; 
-justify-content: left;
-align-items: start;
-gap: 40px;
-margin-bottom: 20px;
-padding-left: 159px;
-padding-right: 159px;
+    display: flex;
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    margin-top: -150px;
+    /*uso esto y no se ve igual*/
+    max-width: 1200px;
+    justify-content: left;
+    align-items: start;
+    gap: 40px;
+    margin-bottom: 20px;
+    padding-left: 159px;
+    padding-right: 159px;
 }
-.catalogo-trailers { /*posicionamiento de para poder poner las letras sobre la imagen*/
+
+.catalogo-trailers {
+    /*posicionamiento de para poder poner las letras sobre la imagen*/
     position: relative;
     background-color: #f2f2f2;
 }
-.catalogo-trailers img{
-    background-image: linear-gradient(#000, #fff);
+
+.catalogo-trailers img {
+    background-image: linear-gradient(to top, #000 0%, transparent 30%), url();
 }
+
 .catalogo-trailers article {
     display: flex;
     margin-inline: auto;
     max-width: 1200px;
 }
+
 .catalogo-trailers h3 {
-font-family: var(--font-title);
-font-size: 17px;
-font-weight: 700;
-color: white;  
-position: absolute;
-justify-content: left;
-margin-left: 1%;
-bottom: 15%;
+    font-family: var(--font-title);
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    justify-content: left;
+    margin-left: 1%;
+    bottom: 15%;
 }
+
 .catalogo-trailers a {
-font-family: var(--font-text);
-font-size: 12px;
-font-weight: lighter;
-color: #bdbdbd;;  
-position: absolute;
-margin-left: 1%;
-bottom: 10%;
+    font-family: var(--font-text);
+    font-size: 12px;
+    font-weight: lighter;
+    color: #bdbdbd;
+    ;
+    position: absolute;
+    margin-left: 1%;
+    bottom: 10%;
 }
+
 .news-release {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-margin-inline: auto; /*centrar con margenes para que se reparta todo parejo*/
-max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-inline: auto;
+    /*centrar con margenes para que se reparta todo parejo*/
+    max-width: 1200px;
 }
+
 .news-release .release {
-position: absolute;
-left: 50%;  
-font-family: var(--font-title);
-font-size: 13px;
-font-weight: 700;
-color: #737373;
-padding-top: 34px;
-  }
+    position: absolute;
+    left: 50%;
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: #737373;
+    padding-top: 34px;
+}
+
 .news-release h3 {
-font-family: var(--font-title);
-font-size: 37px;
-font-weight: 700;
-color: #1a1d24;
-margin-top: 25px;
-margin-bottom: 0
+    font-family: var(--font-title);
+    font-size: 37px;
+    font-weight: 700;
+    color: #1a1d24;
+    margin-top: 25px;
+    margin-bottom: 0
 }
+
 .news-release div {
-font-family: var(--font-title);
-font-size: 13px;
-font-weight: 700;
-color: #1a1d24;
-margin-top: 19px;
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1d24;
+    margin-top: 19px;
 }
+
 .news-release p {
-font-family: var(--font-text);
-font-size: 15px;
-font-weight: 400;
-margin-top: 29px;
-margin-bottom: 25px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 29px;
+    margin-bottom: 25px;
 }
+
 .news-release footer {
     display: flex;
     margin-bottom: 81px;
-    justify-content: space-between; /*como disminuir el espacio*/
+    justify-content: center;
+    /*como disminuir el espacio*/
 }
-.news-release footer div { /*REVISAR NO CREO Q SEA DE ESTA FORMA*/
+
+.news-release footer div {
+    /*REVISAR NO CREO Q SEA DE ESTA FORMA*/
     color: #e0041d
 }
+
 .news-release footer div :first-child {
-    color :#1a1d24
+    color: #1a1d24
 }
+
 .trailers {
     display: flex;
     position: relative;
-    
+
 }
+
 .trailers img {
     width: 482px;
-    height: 661px;  
+    height: 661px;
 }
-.trailers  a, button, span { /*NECESITO AYUDAAAAAAAAA*/
-    position: absolute;
-    color: #ffffff;
-    top: 80%;
-}
+
+
 .opiniones {
     width: 1519px;
     height: 511px;
@@ -252,10 +331,16 @@ margin-bottom: 25px;
     display: flex;
     margin: -5px;
 }
-.opiniones img {
-    
-  margin-top: 20% ;
-  /*OJO TODO LO DE LA IMAGEN*/
 
+.opiniones img {
+
+    margin-top: 20%;
+    border-radius: 50%;
+    /*OJO TODO LO DE LA IMAGEN*/
 }
 
+.latest-news {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+}
