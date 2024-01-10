@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    /*flex header*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 80px;
+    margin-inline: auto;
+    /*centrar con margenes para que se reparta todo parejo*/
+    max-width: 1200px;
+    /*ancho max que el lememento puede tener, puso pequeña la barra del header */
+    color: white;
+    text-transform: uppercase;
+    /*poner mayuscula*/
+    fill: white;
+    font-family: var(--font-title);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0, 08px;
+    /*ojo repasar lo de las fuentes relativas la multiplicacion*/
+
+}
+
+.header svg /*ajuste de svg redes sociales*/
+    {
+    width: 20px;
+    height: 20px;
+}
+
+.header .main-menu ul
+
+/*flex menu pricipal*/
+    {
+    display: flex;
+    gap: 40px
+        /*¿Por qué el gap no me funciona en el .heard pricipal y debo agregarlo a cada clase?*/
+
+}
+
+.header .tools-menu
+
+/*flex menu herramientas pricipal*/
+    {
+    display: flex;
+    gap: 40px;
+}
+
+.header .tools-menu ul
+
+/*flex menu redes*/
+    {
+    display: flex;
+    gap: 40px;
+}

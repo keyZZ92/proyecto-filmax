@@ -1,0 +1,60 @@
+.news-release {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-inline: auto;
+    /*centrar con margenes para que se reparta todo parejo*/
+    max-width: 1200px;
+}
+
+.news-release .release {
+    position: absolute;
+    left: 50%;
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: #737373;
+    padding-top: 34px;
+}
+
+.news-release h3 {
+    font-family: var(--font-title);
+    font-size: 37px;
+    font-weight: 700;
+    color: #1a1d24;
+    margin-top: 25px;
+    margin-bottom: 0
+}
+
+.news-release div {
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1d24;
+    margin-top: 19px;
+}
+
+.news-release p {
+    font-family: var(--font-text);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 29px;
+    margin-bottom: 25px;
+}
+
+.news-release footer {
+    display: flex;
+    margin-bottom: 81px;
+    justify-content: center;
+    /*como disminuir el espacio*/
+}
+
+.news-release footer div {
+    /*REVISAR NO CREO Q SEA DE ESTA FORMA*/
+    color: #e0041d
+}
+
+.news-release footer div :first-child {
+    color: #1a1d24
+}

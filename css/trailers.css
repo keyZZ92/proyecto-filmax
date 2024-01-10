@@ -1,0 +1,11 @@
+.trailers {
+    display: flex;
+    position: relative;
+
+}
+
+.trailers img {
+    width: 482px;
+    height: 661px;
+}
+

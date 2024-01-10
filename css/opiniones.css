@@ -1,0 +1,14 @@
+.opiniones {
+    width: 1519px;
+    height: 511px;
+    background-color: var(--background-color2);
+    display: flex;
+    margin: -5px;
+}
+
+.opiniones img {
+
+    margin-top: 20%;
+    border-radius: 50%;
+    /*OJO TODO LO DE LA IMAGEN*/
+}
