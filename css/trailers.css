@@ -1,11 +1,48 @@
 .trailers {
     display: flex;
     position: relative;
-
+    margin-top: 3.7%;
+    
 }
-
 .trailers img {
     width: 482px;
     height: 661px;
 }
 
+.trailers .nombre-pelicua {
+    position: absolute;
+    top: 60%;
+    font-family: var(--font-title);
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 35px;
+    padding-left: 28.px;
+    padding-top: 16px;
+}
+.trailers  .clasificacion {
+    position: absolute;
+    top: 68%;
+    font-family: var(--font-text);
+    font-size: 12px;
+    font-weight: 300;
+    color: #bdbdbd;
+    margin: 35px;
+    left: 28.px;
+    margin-bottom: 20px;
+}
+.trailers .acceso {
+    position: absolute;
+    top: 75%;
+    display: flex;
+    gap: 40px;
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 35px;
+    padding-bottom: 46px;
+
+}

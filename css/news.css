@@ -72,10 +72,10 @@
 .news .news-data h2 {
     font-family: var(--font-title);
     text-transform: uppercase;
-    /*¿Por qué no funciona?*/
     font-size: 37px;
     font-weight: 700;
     color: white;
+   
 }
 
 .news .news-data>p {
@@ -92,4 +92,5 @@
     font-size: 13px;
     font-weight: 700;
     color: white;
+    text-transform: uppercase;
 }

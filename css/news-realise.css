@@ -1,13 +1,14 @@
 .news-release {
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     margin-inline: auto;
     /*centrar con margenes para que se reparta todo parejo*/
     max-width: 1200px;
 }
-
+.news-release img {
+    object-fit:none;/*la use para mantener el aspecto natual de la imagen*/
+    object-position: 50%
+}
 .news-release .release {
     position: absolute;
     left: 50%;
@@ -16,6 +17,7 @@
     font-weight: 700;
     color: #737373;
     padding-top: 34px;
+    max-width: 570px;
 }
 
 .news-release h3 {
@@ -24,37 +26,35 @@
     font-weight: 700;
     color: #1a1d24;
     margin-top: 25px;
-    margin-bottom: 0
+    margin-bottom: 19.3px
 }
-
-.news-release div {
+.news-release .cadena-temporada {
+    display: flex;
+    gap: 40px;
     font-family: var(--font-title);
     font-size: 13px;
     font-weight: 700;
-    color: #1a1d24;
-    margin-top: 19px;
+    color:#1a1d24;
+    margin-bottom: 29.6px;
 }
-
-.news-release p {
+.news-release .samurai {
     font-family: var(--font-text);
     font-size: 15px;
-    font-weight: 400;
-    margin-top: 29px;
-    margin-bottom: 25px;
+    font-weight:400;
+    color: #737373;
 }
 
 .news-release footer {
     display: flex;
-    margin-bottom: 81px;
-    justify-content: center;
-    /*como disminuir el espacio*/
+    font-family: var(--font-title);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 36.8px;
 }
-
-.news-release footer div {
-    /*REVISAR NO CREO Q SEA DE ESTA FORMA*/
-    color: #e0041d
+.news-release .More-information {
+    color: #e0011a;
 }
-
-.news-release footer div :first-child {
-    color: #1a1d24
+.news-release .watch-trailers {
+    color: #1a1d24;
+    margin-left: 36.4px;
 }
