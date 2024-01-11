@@ -1,17 +1,18 @@
+
 .opiniones {
-    width: 1519px;
-    height: 511px;
     background-color: var(--background-color3);
     display: flex;
-    margin: 0px; /*z index debo usarlo y no -margin*/
-    margin-inline: auto;
+    margin: -5px; /*z index debo usarlo y no -margin*/
+    width: 1519px;
+    height: 511px;
+    margin-inline:auto;
+    overflow: hidden;
 }
-
 .opiniones img {
-
+    background-color: var(--background-color3);
     margin-top: 20%;
     border-radius: 50%;
     overflow: hidden;
-    background-color: var(--background-color3);
+  
 
 }
