@@ -2,17 +2,28 @@
 .opiniones {
     background-color: var(--background-color3);
     display: flex;
-    margin: -5px; /*z index debo usarlo y no -margin*/
-    width: 1519px;
-    height: 511px;
-    margin-inline:auto;
+    margin: -5px;
+    justify-content: center;
+    padding-left: 159px;
+    padding-right: 159px;
     overflow: hidden;
-}
-.opiniones img {
-    background-color: var(--background-color3);
-    margin-top: 20%;
+ } 
+ .opiniones .article-opinion {
+    
+    width: 370px;
+    height: 285px;
+    margin-top: 120px;
+    margin-bottom: 90px;
+ }
+ .opiniones img {
     border-radius: 50%;
     overflow: hidden;
-  
+    
+ }
+ 
 
-}
+    
+
+
+
+   
