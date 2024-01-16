@@ -3,23 +3,53 @@
     background-color: var(--background-color3);
     display: flex;
     margin: -5px;
-    justify-content: center;
-    padding-left: 159px;
-    padding-right: 159px;
+    padding-left: 0px; /*ojo esto debo acomodar*/
+    padding-right: 0px;
+    justify-items: center;
+    min-width: max-content;
     overflow: hidden;
- } 
+    min-width: 1200px;
+    margin-inline:auto;
+    }
+    
  .opiniones .article-opinion {
     
     width: 370px;
     height: 285px;
     margin-top: 120px;
     margin-bottom: 90px;
- }
+    color: white;
+
+     }
+
  .opiniones img {
     border-radius: 50%;
     overflow: hidden;
-    
+    margin-left: 25%;
  }
+
+ .opiniones .texto-opiniones {
+   font-family: 'lora';
+   font-size: 20px;
+   font-weight: lighter;
+   text-align: center;
+    }
+ .opiniones .nombre-reseñas {
+   font-family: var(--font-title);
+   font-size: 13px;
+   font-weight:700;
+   text-align: center;
+   margin-top: 10px;
+   
+ }
+ .opiniones .film-expert {
+   font-family: var(--font-text);
+   font-size: 12px;
+   font-weight: lighter;
+   text-align: center;
+   margin-top: 8px;
+ }
+ 
  
 
     
