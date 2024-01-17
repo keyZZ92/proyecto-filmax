@@ -7,7 +7,7 @@
 }
 .news-release img {
     object-fit:none;/*la use para mantener el aspecto natual de la imagen*/
-    object-position: 50%
+    object-position: 65%
 }
 .news-release .release {
     position: absolute;

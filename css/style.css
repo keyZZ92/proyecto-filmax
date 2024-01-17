@@ -4,6 +4,7 @@
     --background-color: #1a1d24;
     --background-color3: #e0011a;
     --background-color2:#a8a8a8 ;
+    --background-color4: #abb8c3;
 }
 *:where(:not(html, iframe, canvas, img, svg, video, audio) :not(svg *, symbol *)) {
     all: unset;
