@@ -95,10 +95,20 @@
     margin-bottom: 20px;
 }
 
-.news .news-data>a {
+.news .news-data .news-data-enlace {
     font-family: var(--font-title);
     font-size: 13px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
+}
+
+.news-data {
+    position: relative;
+}
+.news-data .news-data-enlace ::after {
+    position: absolute;
+    content: "->";
+    color: var(--background-color3);
+    gap: 20px;
 }

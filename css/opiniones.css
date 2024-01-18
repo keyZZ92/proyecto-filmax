@@ -7,33 +7,30 @@ body .opiniones{
   max-width: 1200px;
   margin-inline: auto;
   overflow: hidden;
-  
-
 }
 .opiniones .flex-de-opiniones {
   
   display: flex;
   margin: 10%;
   gap: 10px;
-  clip-path:inset(0px 120px 0px)
   
 }
     
  .opiniones .article-opinion {
     
- width: 370px;
- height: 285px;
+ width: 330px;
+ height: 260px;
  color: white;
+ flex: 0 0 350px;
 
- 
 }
 
  .opiniones img {
-width: 105px;
-height: 105px;
+width: 90px;
+height: 90px;
 border-radius: 50%;
 overflow: hidden;
-margin-left: 25%;
+margin-left: 35%;
 }
 
 .opiniones .texto-opiniones {
@@ -58,9 +55,21 @@ font-weight: lighter;
 text-align: center;
 margin-top: 8px;
  }
-
-
- /*no logro que separa cada cuadrado de reseñas para creale su tamaño . ¿tendria q separar cada articulo en un div?*/
+ .article-opinion {
+  position: relative;
+  align-items: center;
+} 
+.article-opinion ::before {
+  position: absolute;
+  content: icon ;
+  background-color: black;
+  right:50%;
+  top: 65px;
+  border-radius: 50%;
+  height: 1.2em;
+  width: 1.2em;
+  line-height: 1.2em;
+}
  
  
 

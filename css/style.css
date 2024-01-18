@@ -2,8 +2,8 @@
     --font-text: 'Roboto', sans-serif;
     --font-title: 'Roboto Condensed', sans-serif; 
     --background-color: #1a1d24;
-    --background-color3: #e0011a;
     --background-color2:#a8a8a8 ;
+    --background-color3: #e0011a;
     --background-color4: #abb8c3;
     --background-color5: #737373;
 }
@@ -42,7 +42,6 @@ footer  {
     /*centrar con margenes para que se reparta todo parejo*/
     /*ancho max que el lememento puede tener, puso pequeña la barra del header */
     color: white;
-    text-transform: uppercase;
     fill: white
 }
 footer  svg /*ajuste de svg redes sociales*/
@@ -50,5 +49,3 @@ footer  svg /*ajuste de svg redes sociales*/
 width: 20px;
 height: 20px;
 }
-
-
