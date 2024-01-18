@@ -1,20 +1,137 @@
 footer  {
-    background-color: var(--background-color);
-    height: 400px;
+background-color: var(--background-color);
+height: 400px;
+margin-top: 200px;
 }
 .footer {
-    margin-inline: auto;
-    max-width: 1200px;
+margin-inline: auto;
+max-width: 1200px;
+display: flex;
+gap: 100px;
+color: white;
+justify-content: space-between;
+padding: 15px;
+}
+.footer .derechos {
+font-family: 'lora';
+font-size: 14px;
+font-weight: lighter;
+text-align: center;
+color: #a8a8a8;
+text-transform:lowercase
+}
+
+.footer .movies-footer {
+display: flex;
+gap: 20px;
+}
+.footer .additional-footer {
     display: flex;
-    gap: 100px;
-    color: white;
-    justify-content: space-between;
+    gap: 20px;
+}
+.footer .newsletter-footer {
+    display: flex;
+    gap: 20px;
+}
+.footer .linea-roja {
+background-color: var(--background-color3);
+height: 0.5px;
+width: 28px;
+margin-top: 10px;
 }
 .footer h3 { 
-   font-family: var(--font-title);
-   font-size: 15px;
-   font-weight:700;
-   text-align: left;
-   margin-top: 10px;
-   margin-bottom: 17px;
+font-family: var(--font-title);
+font-size: 15px;
+font-weight:700;
+text-align: left;
+margin-top: 0px;
+margin-bottom: 17px;
 }
+.footer .movies-menu {
+font-family: 'lora';
+font-size: 14px;
+font-weight: lighter;
+text-align: left;
+color: #a8a8a8;
+}
+.movies-menu li {
+margin-bottom: 9px;
+text-transform:lowercase /*los enlaces se colocan por defecto en mayuscula y si los cambio pierdo el estilo inicial*/
+}
+.footer .links-menu {
+font-family: 'lora';
+font-size: 14px;
+font-weight: lighter;
+text-align: left;
+color: #a8a8a8;
+}
+.links-menu li {
+margin-bottom: 9px;
+text-transform:lowercase /*los enlaces se colocan por defecto en mayuscula y si los cambio pierdo el estilo inicial*/
+}
+
+.footer .linea-gris-footer{
+background-color: var(--background-color5);
+height: 0.5px;
+width: 270px;
+margin-top: 31px;
+}
+
+
+.footer .redes-footer ul {
+display: flex;
+margin-top: 31px;
+}
+.footer .twitter-footer {
+    background-color: #1da1f3 ;
+    position: relative;
+    border-radius: 50%;
+    height: 2.3em;
+    width: 2.3em;
+    line-height: 2.6em;
+    text-align:center;
+    margin-top: 5px;
+    margin-right: 5px;
+    }
+
+.footer .facebook-footer {
+    background-color: #3a559f ;
+    position: relative;
+    border-radius: 50%;
+    height: 2.3em;
+    width: 2.3em;
+    line-height: 2.6em;
+    text-align:center;
+    margin-top: 5px;
+    margin-right: 5px;
+    }
+.footer .instagram-footer {
+    background-color: #ce2e92 ;
+    position: relative;
+    border-radius: 50%;
+    height: 2.3em;
+    width: 2.3em;
+    line-height: 2.6em;
+    text-align:center;
+    margin-top: 5px;
+    margin-right: 5px;
+    }    
+.footer .youtube-footer {
+    background-color: #e0011a ;
+    position: relative;
+    border-radius: 50%;
+    height: 2.3em;
+    width: 2.3em;
+    line-height: 2.6em;
+    text-align:center;
+    margin-top: 5px;
+    margin-right: 5px;
+     }   
+.footer svg /*ajuste de svg redes sociales*/ {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+ }

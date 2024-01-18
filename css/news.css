@@ -30,9 +30,16 @@
     font-family: var(--font-title);
     font-size: 17px;
     font-weight: 700;
-    
+    display: flex;
+    gap: 10px;
 }
-
+.recent-news .linea-roja {
+    background-color: var(--background-color3);
+    height: 0.5px;
+    width: 28px;
+    margin-top: 10px;
+    }
+    
 .news aside h3 {
     font-family: var(--font-title);
     font-size: 16px;

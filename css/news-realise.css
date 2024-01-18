@@ -16,10 +16,14 @@
     font-size: 13px;
     font-weight: 700;
     color: #737373;
-    padding-top: 34px;
     max-width: 570px;
 }
-
+.linea-roja {
+    background-color: var(--background-color3);
+    height: 0.5px;
+    width: 48px;
+    margin-bottom: 34px;
+    }
 .news-release h3 {
     font-family: var(--font-title);
     font-size: 37px;
@@ -44,12 +48,13 @@
     color: #737373;
 }
 
-.news-release footer {
+.news-release .news-release-footer{
     display: flex;
     font-family: var(--font-title);
     font-size: 13px;
     font-weight: 700;
     margin-top: 36.8px;
+    margin-bottom: 100px;
 }
 .news-release .More-information {
     color: #e0011a;
