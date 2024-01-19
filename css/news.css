@@ -103,12 +103,12 @@
     text-transform: uppercase;
 }
 
-.news-data {
-    position: relative;
-}
-.news-data .news-data-enlace ::after {
-    position: absolute;
-    content: "->";
-    color: var(--background-color3);
+.news-data .news-data-enlace {
+    display: flex;
     gap: 20px;
+}
+.news-data .news-data-enlace img {
+    height: 15px;
+    width: 15px;
+    bottom: 5px;
 }

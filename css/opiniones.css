@@ -22,54 +22,58 @@ body .opiniones{
  height: 260px;
  color: white;
  flex: 0 0 350px;
-
 }
-
- .opiniones img {
-width: 90px;
-height: 90px;
+ .opiniones .imagen-opinion {
+width: 105px;
+height: 105px;
 border-radius: 50%;
 overflow: hidden;
 margin-left: 35%;
+margin-bottom: 30px;
 }
-
-.opiniones .texto-opiniones {
-font-family: 'lora';
-font-size: 20px;
-font-weight: lighter;
-text-align: center;
-
-}
- .opiniones .nombre-reseñas {
-font-family: var(--font-title);
-font-size: 13px;
-font-weight:700;
-text-align: center;
-margin-top: 10px;
-   
-}
- .opiniones .film-expert {
-font-family: var(--font-text);
-font-size: 12px;
-font-weight: lighter;
-text-align: center;
-margin-top: 8px;
- }
- .article-opinion {
-  position: relative;
-  align-items: center;
+.article-opinion {
+position: relative;
+align-items: center;
 } 
 .article-opinion ::before {
-  position: absolute;
-  content: icon ;
-  background-color: black;
-  right:50%;
-  top: 65px;
-  border-radius: 50%;
-  height: 1.2em;
-  width: 1.2em;
-  line-height: 1.2em;
+position: absolute;
+content:"";
+background-color: black;
+right: 46%;
+bottom: 53%;
+border-radius: 50%;
+height: 34px;
+width: 34px;
 }
+.imagen-comillas {
+width: 16px;
+height: 16px;
+margin-top: -135px;
+margin-left: -195px;  /**/
+  
+}
+.opiniones .texto-opiniones {
+  font-family: 'lora';
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  
+  }
+   .opiniones .nombre-reseñas {
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight:700;
+  text-align: center;
+  margin-top: 10px;
+     
+  }
+   .opiniones .film-expert {
+  font-family: var(--font-text);
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 8px;
+   }
  
  
 
