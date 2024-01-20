@@ -5,14 +5,28 @@
     font-size: 13px;
     font-weight: 700;
     color: white;
-    margin-top: -150px;
+    margin-top: -180px;
     /*uso esto y no se ve igual*/
     max-width: 1200px;
     margin-inline: auto;
     gap: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
     padding-left: 159px;
     padding-right: 159px;
+    opacity: 90%;
+    transition: 0.3s;
+    }
+    .recent-trailers .catalogo-menu ul :hover {
+        color: var(--background-color6);
+    }
+    .recent-trailers .catalogo-menu li{
+        position: relative;
+    }
+    .recent-trailers .catalogo-menu li::after{
+    content: "/";
+    position: absolute;
+    background-color: #1a1d24;
+    right: -20px;
     }
 
 .catalogo-trailers article {
@@ -22,37 +36,43 @@
     gap: 20px;
     position: relative;
     margin-bottom: 80px;
-    z-index: 1;
+    margin-top: -35px;
+    
     }
-.catalogo-trailers article ::after {
-content: "890";
-top:50%;
-}
-
-
-
-/*https://www.youtube.com/watch?v=qa4oWn3Zvpk*/
-
-
-       
 .catalogo-trailers div {
     position: absolute;
     padding: 18.4px;
-    justify-content: left;
-    bottom: 0;
+    bottom: 10%;
     }
+.catalogo-trailers div img {
+    margin-left: 35%;
+    margin-bottom: 20%;
+    }
+        
 .catalogo-trailers h3 {
     font-family: var(--font-title);
     font-size: 17px;
     font-weight: 700;
     color: white;
+    opacity: 100%;
+    transition: 0.3s;
     }
+.catalogo-trailers h3:hover {
+        color: var(--background-color6) }
+
 .catalogo-trailers a {
     font-family: var(--font-text);
     font-size: 12px;
     font-weight: lighter;
     color: #bdbdbd; 
+    opacity: 100%;
+    transition: 0.3s;
     }
-
+.catalogo-trailers a:hover {
+        color: white }
+    
+body .catalogo-trailers {
+    background-color: var(--background-color2);
+     }
     /*COMO PONER EL FONDO GRIS POR Q SI LO COLOCO SE PONE COMPLETO Y BAJA EL CATALOGO De TRILERS*/
     

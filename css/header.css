@@ -32,9 +32,18 @@
 /*flex menu pricipal*/
     {
     display: flex;
-    gap: 40px
+    gap: 40px;
+    position: relative;
         /*¿Por qué el gap no me funciona en el .heard pricipal y debo agregarlo a cada clase?*/
-
+}
+.header .main-menu li{
+    position: relative;
+}
+.header .main-menu li::after{
+content: "/";
+position: absolute;
+background-color: #1a1d24;
+right: -20px;
 }
 
 .header .tools-menu

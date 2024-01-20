@@ -1,0 +1,28 @@
+.boton-rojo {
+background-color: var(--background-color3);
+position: relative;
+height: 50px;
+width: 207px;
+border-radius: 4px;
+line-height: 4em;
+text-align:center;
+margin-inline: auto;
+font-family: var(--font-title);
+font-size: 13px;
+font-weight: 700;
+color:white;
+margin-top: 50px;
+margin-bottom: 102px;
+
+
+opacity: 100%;
+transition: 0.3s;
+}
+  
+.boton-rojo:hover {
+  color: #c74242;
+  opacity: 85%;
+}
+
+/*el hover es el boton no las letras*/
+ 
