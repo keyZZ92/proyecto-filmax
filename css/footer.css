@@ -53,11 +53,17 @@ font-size: 14px;
 font-weight: lighter;
 text-align: left;
 color: #a8a8a8;
+
 }
 .movies-menu li {
 margin-bottom: 9px;
-
+opacity: 100%;
+transition: 0.3s;
 }
+.movies-menu li:hover {
+  color: white;
+}
+
 .footer .links-menu {
 font-family: 'lora';
 font-size: 14px;
@@ -67,6 +73,11 @@ color: #a8a8a8;
 }
 .links-menu li {
 margin-bottom: 9px;
+opacity: 100%;
+transition: 0.3s;
+}
+.links-menu li:hover {
+  color: white;
 }
 
 .footer .linea-gris-footer{
