@@ -16,9 +16,7 @@
 body {
     margin: 0;
 }
-body .header {
-    header {position: sticky;top: 0;}
-}
+
 html /*fuente*/
     {
     font-family: var(--font-text);
@@ -52,4 +50,25 @@ footer  svg /*ajuste de svg redes sociales*/
 {
 width: 20px;
 height: 20px;
+}
+.up {
+position: fixed;
+bottom: -32%;
+right: -11%;
+margin: 0;
+}
+.aside-botton .bestseller {
+    position: fixed;
+    bottom: 10%;
+    right: -15%;
+}
+.aside-botton .buy {
+    position: fixed;
+    bottom: 20.5%;
+    right: -15%;
+}
+.aside-botton .hide-panel {
+    position: fixed;
+bottom: 0%;
+right: -15%;
 }

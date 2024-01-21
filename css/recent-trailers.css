@@ -17,7 +17,16 @@
     transition: 0.3s;
     }
     .recent-trailers .catalogo-menu ul :hover {
-        color: var(--background-color6);
+    color: var(--background-color6);
+    }
+
+    .recent-trailers .catalogo-menu ul li:first-child {
+    color: white;
+    opacity: 100%;
+    transition: 0s;    
+     }
+    .recent-trailers .catalogo-menu ul li:first-child :hover {
+    color:white;
     }
     .recent-trailers .catalogo-menu li{
         position: relative;
