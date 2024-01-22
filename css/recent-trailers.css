@@ -53,9 +53,13 @@
     padding: 18.4px;
     bottom: 10%;
     }
+.catalogo-trailers article img {
+    filter: brightness(85%); 
+}
 .catalogo-trailers div img {
     margin-left: 35%;
     margin-bottom: 20%;
+    filter: brightness(75%); 
     }
         
 .catalogo-trailers h3 {

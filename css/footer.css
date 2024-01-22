@@ -1,4 +1,22 @@
 footer  {
+    background-color: var(--background-color3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-inline: auto;
+    /*centrar con margenes para que se reparta todo parejo*/
+    /*ancho max que el lememento puede tener, puso pequeña la barra del header */
+    color: white;
+    fill: white
+}
+footer  svg /*ajuste de svg redes sociales*/
+{
+width: 20px;
+height: 20px;
+}
+
+footer  {
 background-color: var(--background-color);
 height: 400px;
 margin-top: 200px;

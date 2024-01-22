@@ -45,6 +45,7 @@ margin-top: 106px;
  .latest-news .grid-columna1 img {
    height: 600px;
    width: 570px;
+   filter: brightness(50%); 
    
 }
 
@@ -110,6 +111,7 @@ margin-top: 106px;
  .latest-news .grid-columna2 img {
    height: 270px;
    width: 270px;
+   filter: brightness(50%); 
    
  }
  
@@ -169,7 +171,7 @@ margin-top: 106px;
  .latest-news .grid-columna3 img {
    height: 270px;
    width: 270px;
-   transition: 0.3s;
+   filter: brightness(50%); 
  }
 
 
@@ -230,6 +232,7 @@ margin-top: 106px;
  .latest-news .grid-columna4 img {
    height: 280px;
    width: 600px;
+   filter: brightness(50%); 
  }
 
  .latest-news .grid-columna4 .grid-contenido4 {

@@ -30,33 +30,11 @@ img {
     max-width: 100%;
     height: auto;
 }/*con esto hago que todas las imagenes se adapten al tamaño de su padre*/
-.bg-main /*div y clase creado para hacer una capa de fondo del header y sea del mismo*/
+body .bg-main /*div y clase creado para hacer una capa de fondo del header y sea del mismo*/
     {
     background-color: #1a1d24
 }
-footer  {
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    margin-inline: auto;
-    /*centrar con margenes para que se reparta todo parejo*/
-    /*ancho max que el lememento puede tener, puso pequeña la barra del header */
-    color: white;
-    fill: white
-}
-footer  svg /*ajuste de svg redes sociales*/
-{
-width: 20px;
-height: 20px;
-}
-.up {
-position: fixed;
-bottom: -32%;
-right: -11%;
-margin: 0;
-}
+
 .aside-botton .bestseller {
     position: fixed;
     bottom: 10%;
@@ -69,6 +47,16 @@ margin: 0;
 }
 .aside-botton .hide-panel {
     position: fixed;
-bottom: 0%;
-right: -15%;
+    bottom: 0%;
+    right: -15%;
 }
+html { 
+    scroll-behavior: smooth;
+}
+
+.up {
+    position: fixed;
+    bottom: -32%;
+    right: -11%;
+    margin: 0;
+    }

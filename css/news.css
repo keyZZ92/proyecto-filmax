@@ -9,6 +9,10 @@
     color: white;
     padding-bottom: 200px;
 }
+body .news-main {
+    background-color: var(--background-color);
+    
+}
 
 .news>article {
     max-width: 75%;
