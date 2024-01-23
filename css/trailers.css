@@ -6,34 +6,53 @@
     justify-content: center;
     filter: brightness(95%); 
      }
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .trailers .nombre-pelicula {
-    position: absolute;
-    top: 55%;
     font-family: var(--font-title);
     font-size: 27px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
     margin: 35px;
-    padding-left: 28.px;
+    padding-left: 28px;
     padding-top: 16px;
     opacity: 100%;
-    transition: 0.3s;
+    transition: top 0.7s;
     }
+  .acceso{
+        opacity: 0;
+        transition:  0.7s;
+    }
+
 .trailers .nombre-pelicula:hover {
-    color: var(--background-color6);
+    top: 30%;
+     }
+
+     .contain-img:hover + .acceso{
+        display: block;
+        opacity: 1;
      }
 .trailers .nombre-pelicula::before{
-    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgNjEyIDYxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC4xMDk5OTk5OTk5OTk5OTk5LDAsMCwwLjEwOTk5OTk5OTk5OTk5OTksMjcyLjMzOTk5OTk5OTk5OTksMjcyLjMzOTk4NjQxOTY3NzUzKSI+PHBhdGggZD0iTTAgMjg3LjQ2OGg2MTJ2MzcuMDY0SDB6IiBmaWxsPSIjZmNiOTAwIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIj48L3BhdGg+PC9nPjwvc3ZnPg==);
-    position: absolute;
-    top:-556%;
-    left: -225px;
     }
 .trailers  .clasificacion {
-    position: absolute;
-    top: 68%;
     font-family: var(--font-text);
     font-size: 12px;
     font-weight: 300;
@@ -49,8 +68,6 @@
     color: white;
      }                              /*no funciona este hover*/
 .trailers .acceso {
-    position: absolute;
-    top: 75%;
     display: flex;
     gap: 90px;
     font-family: var(--font-title);
@@ -72,10 +89,6 @@
     color: var(--background-color6);
 }
 .acceso .whatch::before {
-    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGNpcmNsZSByPSIyNTYiIGN4PSIyNTYiIGN5PSIyNTYiIGZpbGw9IiNmY2I5MDAiIHNoYXBlPSJjaXJjbGUiIHRyYW5zZm9ybT0ibWF0cml4KDAuMDMsMCwwLDAuMDMsMjQ4LjMyLDI0OC4zMikiPjwvY2lyY2xlPjxnIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQwMDAwMDAwMDAwMDAwMDE1LDAsMCwwLjA0MDAwMDAwMDAwMDAwMDAxNSwyNDUuNzYwMDAwMDAwMDAwMSwyNDUuNzYwMDAwMDAwMDAwMSkiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTI1NiA0OTFDMTI2LjIxMyA0OTEgMjEgMzg1Ljc4NyAyMSAyNTZTMTI2LjIxMyAyMSAyNTYgMjFzMjM1IDEwNS4yMTMgMjM1IDIzNS0xMDUuMjEzIDIzNS0yMzUgMjM1em0xMDUuMjExLTIyNi45NjRjMi43OTUtMS44MjcgNC4zNDgtNC42OTcgNC4zNDgtOC4wMzZzLTEuNTUzLTYuMjA5LTQuMzQ4LTguMDM2bC0xNDguNzc0LTk3LjIzOGMtMy4wMjktMS45NzktNi42MzgtMi4xMjktOS44Mi0uNDA4LTMuMTgyIDEuNzIyLTUuMDMyIDQuODI1LTUuMDMyIDguNDQzdjE5NC40NzZjMCAzLjYxOCAxLjg0OSA2LjcyMiA1LjAzMiA4LjQ0MyAzLjE4MiAxLjcyMiA2Ljc5MiAxLjU3MiA5LjgyLS40MDh6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiM0ZjRjNDQiIG9wYWNpdHk9IjEiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+);
-    position: absolute;
-    top: -1943%;
-    left: -378%; 
 }
 .acceso .informacion {
     position: relative;
@@ -87,10 +100,6 @@
     color: var(--background-color6);
 }
 .acceso .informacion::before {
-    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGNpcmNsZSByPSIyNTYiIGN4PSIyNTYiIGN5PSIyNTYiIGZpbGw9IiM3MzczNzMiIHNoYXBlPSJjaXJjbGUiIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQsMCwwLDAuMDQsMjQ1Ljc2LDI0NS43NikiPjwvY2lyY2xlPjxnIHRyYW5zZm9ybT0ibWF0cml4KDAuMDIsMCwwLDAuMDIsMjUwLjg4MDE0OTUzNjEzMjc2LDI1MC44ODAwMDc0NzY4MDY2NCkiPjxwYXRoIGQ9Im01MDYuMTM0IDI0MS44NDMtLjAxOC0uMDE5LTEwNC41MDQtMTA0Yy03LjgyOS03Ljc5MS0yMC40OTItNy43NjItMjguMjg1LjA2OC03Ljc5MiA3LjgyOS03Ljc2MiAyMC40OTIuMDY3IDI4LjI4NEw0NDMuNTU4IDIzNkgyMGMtMTEuMDQ2IDAtMjAgOC45NTQtMjAgMjBzOC45NTQgMjAgMjAgMjBoNDIzLjU1N2wtNzAuMTYyIDY5LjgyNGMtNy44MjkgNy43OTItNy44NTkgMjAuNDU1LS4wNjcgMjguMjg0IDcuNzkzIDcuODMxIDIwLjQ1NyA3Ljg1OCAyOC4yODUuMDY4bDEwNC41MDQtMTA0IC4wMTgtLjAxOWM3LjgzMy03LjgxOCA3LjgwOC0yMC41MjItLjAwMS0yOC4zMTR6IiBmaWxsPSIjZmNiOTAwIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==);
-    position: absolute;
-    bottom: -1964%;
-    right:-151%; 
 }
 
 /*ALGO ESTA MAL CON EL ::BEFORE botton y righ de locos*/
