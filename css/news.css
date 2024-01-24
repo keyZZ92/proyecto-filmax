@@ -11,7 +11,6 @@
 }
 body .news-main {
     background-color: var(--background-color);
-    
 }
 
 .news>article {
@@ -37,7 +36,8 @@ body .news-main {
     display: flex;
     gap: 10px;
 }
-.recent-news .linea-roja {
+.recent-news::after {
+    content: " ";
     background-color: var(--background-color3);
     height: 0.5px;
     width: 28px;

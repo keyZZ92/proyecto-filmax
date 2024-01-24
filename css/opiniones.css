@@ -1,7 +1,7 @@
 
 body .opiniones{
   background-color: var(--background-color3);
-  margin: -5px;
+  
 }
 .opiniones .tamaño-opiniones {
   max-width: 1200px;

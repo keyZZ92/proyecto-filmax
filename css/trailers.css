@@ -1,105 +1,297 @@
 .trailers {
     display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
     justify-content: center;
-    filter: brightness(95%); 
-     }
-.
+}
+ .trailer1 {
+    background-image: linear-gradient(transparent, black), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-27-copyright-485x665.jpg");  
+    position: relative;
+    width: 380px;
+    height: 530px;
+    }
 
+.trailer2 {
+    background-image: linear-gradient(transparent, black), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-25-copyright-485x665.jpg");  
+    position: relative;
+    width: 380px;
+    height: 530px;
+    }
+.trailer3 {
+    background-image: linear-gradient(transparent, black), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-23-copyright-485x665.jpg");  
+    position: relative;
+    width: 380px;
+    height: 530px;
+}
+ .trailer4 {
+    background-image: linear-gradient(transparent, black), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-29-copyright-485x665.jpg");  
+    position: relative;
+    width: 380px;
+    height: 530px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.trailers .nombre-pelicula {
+.trailer1 .contenido-trailer1{
+    position: absolute; 
+    padding-top: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 49px; 
+    bottom: 0; 
+ }
+ .contenido-trailer1 {
+    transition: top 3s;
+      }
+.contenido-trailer1:hover  {
+    top:50%;
+}
+.contenido-trailer1 .nombre-pelicula { 
     font-family: var(--font-title);
     font-size: 27px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    margin: 35px;
-    padding-left: 28px;
-    padding-top: 16px;
+    bottom: 0;
+    padding-top: 10px;
     opacity: 100%;
-    transition: top 0.7s;
-    }
-  .acceso{
-        opacity: 0;
-        transition:  0.7s;
-    }
-
-.trailers .nombre-pelicula:hover {
-    top: 30%;
-     }
-
-     .contain-img:hover + .acceso{
-        display: block;
-        opacity: 1;
-     }
-.trailers .nombre-pelicula::before{
-    }
-.trailers  .clasificacion {
+    transition: 0.3s;
+ }
+ .contenido-trailer1::before {
+    content: "_______ ";
+    color: var(--background-color8); /*como hacer la linea con with y h no salia*/
+    margin-bottom: 10px;
+}
+.contenido-trailer1 .nombre-pelicula:hover {
+    color: var(--background-color6);
+ }
+ .contenido-trailer1 .clasificacion {
     font-family: var(--font-text);
     font-size: 12px;
     font-weight: 300;
-    color: #bdbdbd;
-    margin-left:  35px;
-    margin-top: 35px;
+    color: var(--background-color6);
+    padding-top: 10px;
     display: flex;
     gap: 10px;
     opacity: 100%;
     transition: 0.3s;
+    
     }
-.trailers  .clasificacion:hover {
+.contenido-trailer1 .clasificacion:hover {
     color: white;
-     }                              /*no funciona este hover*/
-.trailers .acceso {
+    }
+.contenido-trailer1 .acceso {
     display: flex;
-    gap: 90px;
+    gap: 30px;
     font-family: var(--font-title);
     font-size: 11px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    margin: 40px;
-    padding-bottom: 50px;
-    
-}
-.acceso .whatch {
-    position: relative;
-    opacity: 100%;
+    padding-top: 30px;
     transition: 0.3s;
-     }
-    
-.trailers .whatch:hover {
-    color: var(--background-color6);
-}
-.acceso .whatch::before {
-}
-.acceso .informacion {
-    position: relative;
-    opacity: 100%;
-    transition: 0.3s;
-     }
-    
-.trailers .informacion:hover {
-    color: var(--background-color6);
-}
-.acceso .informacion::before {
+    opacity: 0;
 }
 
-/*ALGO ESTA MAL CON EL ::BEFORE botton y righ de locos*/
+.contenido-trailer1 .acceso:hover {
+    color:  var(--background-color6);
+    opacity: 1;
+ }  
+
+ .trailer2 .contenido-trailer2{
+    position: absolute; 
+    padding-top: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 49px; 
+    bottom: 0; 
+ }
+ .contenido-trailer2 {
+    transition: top 3s;
+      }
+.contenido-trailer2:hover  {
+    top:50%;
+}
+.contenido-trailer2 .nombre-pelicula { 
+    font-family: var(--font-title);
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    bottom: 0;
+    padding-top: 10px;
+    opacity: 100%;
+    transition: 0.3s;
+ }
+ .contenido-trailer2::before {
+    content: "_______ ";
+    color: var(--background-color8); /*como hacer la linea con with y h no salia*/
+    margin-bottom: 10px;
+}
+.contenido-trailer2 .nombre-pelicula:hover {
+    color: var(--background-color6);
+ }
+ .contenido-trailer2 .clasificacion {
+    font-family: var(--font-text);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--background-color6);
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    opacity: 100%;
+    transition: 0.3s;
+    
+    }
+.contenido-trailer2 .clasificacion:hover {
+    color: white;
+    }
+.contenido-trailer2 .acceso {
+    display: flex;
+    gap: 30px;
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    position: relative;
+}
+.contenido-trailer2 .acceso:hover {
+    color:  var(--background-color6);
+    opacity: 1;
+ } 
+ .trailer3 .contenido-trailer3{
+    position: absolute; 
+    padding-top: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 49px; 
+    bottom: 0; 
+ }
+ .contenido-trailer1 {
+    transition: top 3s;
+      }
+.contenido-trailer3:hover  {
+    top:50%;
+}
+.contenido-trailer3 .nombre-pelicula { 
+    font-family: var(--font-title);
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    bottom: 0;
+    padding-top: 10px;
+    opacity: 100%;
+    transition: 0.3s;
+ }
+ .contenido-trailer3::before {
+    content: "_______ ";
+    color: var(--background-color8); /*como hacer la linea con with y h no salia*/
+    margin-bottom: 10px;
+}
+.contenido-trailer3 .nombre-pelicula:hover {
+    color: var(--background-color6);
+ }
+ .contenido-trailer3 .clasificacion {
+    font-family: var(--font-text);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--background-color6);
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    opacity: 100%;
+    transition: 0.3s;
+    
+    }
+.contenido-trailer3 .clasificacion:hover {
+    color: white;
+    }
+.contenido-trailer3 .acceso {
+    display: flex;
+    gap: 30px;
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    position: relative;
+}
+.contenido-trailer3 .acceso:hover {
+    color:  var(--background-color6);
+    opacity: 1;
+ } 
+
+ .trailer4 .contenido-trailer4{
+    position: absolute; 
+    padding-top: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 49px; 
+    bottom: 0; 
+ }
+ .contenido-trailer4 {
+    transition: top 3s;
+      }
+.contenido-trailer4:hover  {
+    top:50%;
+}
+.contenido-trailer4 .nombre-pelicula { 
+    font-family: var(--font-title);
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    bottom: 0;
+    padding-top: 10px;
+    opacity: 100%;
+    transition: 0.3s;
+ }
+ .contenido-trailer4::before {
+    content: "_______ ";
+    color: var(--background-color8); /*como hacer la linea con with y h no salia*/
+    margin-bottom: 10px;
+}
+.contenido-trailer4 .nombre-pelicula:hover {
+    color: var(--background-color6);
+ }
+ .contenido-trailer4 .clasificacion {
+    font-family: var(--font-text);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--background-color6);
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    opacity: 100%;
+    transition: 0.3s;
+    
+    }
+.contenido-trailer4 .clasificacion:hover {
+    color: white;
+    }
+.contenido-trailer4 .acceso {
+    display: flex;
+    gap: 30px;
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    position: relative;
+}
+.contenido-trailer4 .acceso:hover {
+    color:  var(--background-color6);
+    opacity: 1;
+ } 
+
+
+
+
+
